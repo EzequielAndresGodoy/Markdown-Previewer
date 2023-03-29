@@ -52,7 +52,7 @@ And here. | Okay. | I think we get it.
 `
 
 function App() {
-  const [text, setText] = React.useState(`${textInit}`);
+  const [text, setText] = React.useState(textInit);
 
   return (
     <div className="text-center px-4 container-markdown">
