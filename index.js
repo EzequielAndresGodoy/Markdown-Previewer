@@ -56,7 +56,14 @@ function App() {
 
   return (
     <div className="text-center px-4 container-markdown">
-      <h1 className="p-4">My Markdown Previewer</h1>
+            <h1 className="p-4 color-title">My Markdown Previewer</h1>
+
+      <div className="box-container">
+      <h3 className="mt-3 color-title">Input</h3>
+      <h3 className="mt-3 color-title">Output</h3>
+
+      </div>
+      <div className="box-container">
       <textarea
         name="text"
         id="editor"
@@ -66,8 +73,9 @@ function App() {
         onChange={(e) => setText(e.target.value)}
       ></textarea>
 
-      <h3 className="mt-3">Output</h3>
       <Preview markdown={text} />
+      </div>
+     
     </div>
   );
 }
